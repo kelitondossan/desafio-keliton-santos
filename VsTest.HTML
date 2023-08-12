@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test3.css">
+    <title>Lanchonete DB</title>
+</head>
+<body>
+    <header>
+        <h1>Lanchonete DB</h1>
+    </header>
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li>Café - R$ 3.00
+                    <button class="add-to-cart" data-item="café">Adicionar ao Carrinho</button>
+                </li>
+                <li>Chantily (extra do Café) - R$ 1.50
+                    <button class="add-to-cart" data-item="chantily">Adicionar ao Carrinho</button>
+                </li>
+                <li>Suco Natural - R$ 6.20
+                    <button class="add-to-cart" data-item="Suco Natural">Adicionar ao Carrinho</button>
+                </li>
+                <li>Sanduíche - R$ 6.50
+                    <button class="add-to-cart" data-item="Sanduíche">Adicionar ao Carrinho</button>
+                </li>
+                <li>Queijo (extra do Sanduíche) - R$ 2.00
+                    <button class="add-to-cart" data-item="Queijo (extra do Sanduíche)">Adicionar ao Carrinho</button>
+                </li>
+                <li>Salgado - R$ 7.25
+                    <button class="add-to-cart" data-item="Salgado">Adicionar ao Carrinho</button>
+                </li>
+                <li>1 Suco e 1 Sanduíche - R$ 9.50
+                    <button class="add-to-cart" data-item="1 Suco e 1 Sanduíche">Adicionar ao Carrinho</button>
+                </li>
+                <li>1 Café e 1 Sanduíche - R$ 7.50
+                    <button class="add-to-cart" data-item="1 Café e 1 Sanduíche">Adicionar ao Carrinho</button>
+                </li>
+                <li>Suco Maracuja - R$ 4.50
+                    <button class="add-to-cart" data-item="Suco Maracuja">Adicionar ao Carrinho</button>
+                </li>
+                <li>Suco Limão - R$ 4.50
+                    <button class="add-to-cart" data-item="Suco Limão">Adicionar ao Carrinho</button>
+                </li>
+                <li>Suco Mangaba - R$ 4.50
+                    <button class="add-to-cart" data-item="Suco Mangaba ">Adicionar ao Carrinho</button>
+                </li>
+                <li>Guarana em lata - R$ 4.50
+                    <button class="add-to-cart" data-item="Guarana em lata">Adicionar ao Carrinho</button>
+                </li>
+                <li>Coca em lata - R$ 5.50
+                    <button class="add-to-cart" data-item="Coca em lata">Adicionar ao Carrinho</button>
+                </li>
+                <li>Fanta em lata - R$ 7.50
+                    <button class="add-to-cart" data-item="Fanta em lata">Adicionar ao Carrinho</button>
+                </li>
+                <li>Coxinha - R$ 3.50
+                    <button class="add-to-cart" data-item="Coxinha">Adicionar ao Carrinho</button>
+                </li>
+                <li>Pastel - R$ 3.50
+                    <button class="add-to-cart" data-item="Pastel">Adicionar ao Carrinho</button>
+                </li>
+                <li>Pizza - R$ 3.50
+                    <button class="add-to-cart" data-item="Pizza">Adicionar ao Carrinho</button>
+                </li>
+                <li>Torta de Morango - R$ 7.50
+                    <button class="add-to-cart" data-item="Torta de Morango">Adicionar ao Carrinho</button>
+                </li>
+                <li>Torta de Maçã - R$ 7.50
+                    <button class="add-to-cart" data-item="Torta de Maçã">Adicionar ao Carrinho</button>
+                </li>
+                <li>Pudim - R$ 5.50
+                    <button class="add-to-cart" data-item="Pudim">Adicionar ao Carrinho</button>
+                </li>
+                
+            </ul>
+        </section>
+        <section class="order">
+            <h2>Faça Seu Pedido</h2>
+            <form id="order-form">
+                <label for="item">Item:</label>
+                <select id="item" name="item">
+                    <option value="cafe">Café</option>
+                    <option value="chantily">Chantily (extra do Café)</option>
+                    <option value="suco">Suco Natural</option>
+                    <option value="sanduiche">Sanduíche</option>
+                    <option value="queijo">Queijo (extra do Sanduíche)</option>
+                    <option value="salgado">Salgado</option>
+                    <option value="combo1">1 Suco e 1 Sanduíche</option>
+                    <option value="combo2">1 Café e 1 Sanduíche</option>
+                    <option value="suco1">Suco Maracuja</option>
+                    <option value="suco2">Suco Limão</option>
+                    <option value="suco3">Suco Mangaba</option>
+                    <option value="babidaGas1">Guarana em lata</option>
+                    <option value="babidaGas2">Coca-cola em lata</option>
+                    <option value="babidaGas3">Fanta em lata</option>
+                    <option value="salgadosSortidos1">Coxinha</option>
+                    <option value="salgadosSortidos2">Pizza</option>
+                    <option value="salgadosSortidos3">Pastel</option>
+                    <option value="doce1">Torta de Morango</option>
+                    <option value="doce2">Torta de Limão</option>
+                    <option value="doce3">Pudim</option>
+                </select>
+                <label for="quantity">Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <label for="payment">Método de Pagamento:</label>
+                <select id="payment" name="payment">
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="debito">Débito</option>
+                    <option value="credito">Crédito</option>
+                </select>
+                <button type="submit">Calcular Total</button>
+            </form>
+         
+            <div id="total">Valor total </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Lanchonete DB. Todos os direitos reservados.</p>
+    </footer>
+    <script src="teste2.js"></script>
+</body>
+</html>
