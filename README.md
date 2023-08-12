@@ -217,7 +217,7 @@ A classe `CaixaDaLanchonete` oferece as seguintes funcionalidades:
 - `index.html`: Interface visual para visualização dos testes (opcional).
 - 
 
-O Desafio
+## O Desafio
 
 Neste projeto, embarquei em um desafio emocionante de criar testes automatizados para a classe `CaixaDaLanchonete`, que é responsável por calcular o valor de compras em uma lanchonete. Durante a jornada, enfrentei alguns obstáculos de configuração que, com dedicação e ajustes, consegui superar.
 
