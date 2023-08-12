@@ -44,7 +44,7 @@ export class CaixaDaLanchonete {
         const itensDoCarrinho = [];
         const itensExtras = [];
 
-     // Dentro do loop onde você itera sobre os itens
+     // Dentro do loop para itera sobre os itens
 for (const item of itens) {
     const [codigo, quantidade] = item.split(',');
 
